@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Блоки</title>
+    <style>
+        .tab{
+            background-color: #dbdbdb;
+        }
+        .left{
+            background-color: #cccccc;
+            width: 15em;
+            float: left;
+        }
+        .head{
+            background-color: #aaaaaa;
+            margin-left: 15em;
+            margin-bottom: .2em;
+            padding-top: .5em;
+           
+        }
+        .foot{
+            background-color: #cccccc;
+            clear: both
+        }
+        .rasp{
+            clear:both
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tab"> 
+
+        <div class="left">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+            </ul>
+
+        </div>
+
+        <div class="head">
+            <h3>Статья 1</h3>
+            Размер блока: <br>
+                Занимает всю доступную ширину <br>
+                Должен присутствовать цвет фона  <br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em при помощи свойста margin- <br>
+                bottom
+            
+            
+
+        </div>
+        <div class="head">
+            <h3>Статья 2</h3>
+            Размер блока: <br>
+                Занимает всю доступную ширину <br>
+                Должен присутствовать цвет фона  <br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em при помощи свойста margin- <br>
+                bottom Картинка вставлена при помощи тега, плавание организовано по правому краю внутри <br>
+                данной статьи для этой картинки
+            <img src="../mail.png" width="150" style="border-radius: 100px; float: right;"> 
+            <div style="clear: both;"></div>
+        </div>
+        <div class="rasp"></div>
+    </div>
+    <div class="foot">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</div>
+
+
+</body>
+</html>
