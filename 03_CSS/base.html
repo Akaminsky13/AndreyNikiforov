@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .m_menu{
+            width:100px;
+            height: 1.5em;
+            cursor: pointer;
+            background-color: rgb(207, 197, 197);
+            border:  solid black;
+            display: inline-block; 
+            vertical-align: top; 
+            border-radius: 5px;
+ 
+        }
+
+        .m_menu>div{
+            background-color: rgb(245, 244, 242);
+            display: none;
+            border:   1px solid black;
+            border-radius: 5px;
+            
+        }
+        .m_menu:hover{
+            background-color: azure;
+        }
+        .m_menu:hover>div{
+            display: block;
+            z-index: 1;
+        }
+
+        @media all and (max-width: 620px){
+            .menu{
+                width: 100px; 
+            }
+            .m_menu{
+                height: 1.5em;
+            }
+            .m_menu>div{
+                position:relative; 
+                left: 100%;
+                top:-100%; 
+                z-index: 1; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+
+        <div class="m_menu">Понедельник</div>
+        <div class="m_menu">Вторник</div>
+        <div class="m_menu">Среда 
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+        <div class="m_menu">Четверг</div>
+        <div class="m_menu">Пятница
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+        <div class="m_menu">Суббота</div>
+
+    </div>
+    
+
+</body>
+</html>

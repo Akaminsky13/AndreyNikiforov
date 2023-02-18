@@ -1,0 +1,51 @@
+div{
+          
+    display: inline-block;
+}
+.d1{
+   background-color: #ccc;
+   width: 80%;
+}
+.d2{
+    background-image: url(../for_add/t-l.gif);
+    background-position: top left;
+    background-repeat: no-repeat;   
+}
+.d3{
+    background-image: url(../for_add/t-r.gif);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.d4{
+    background-image: url(../for_add/t.gif);
+    background-position: top;
+    background-repeat: repeat-x;
+}
+p{
+    padding: 2em;   
+}
+.d5{
+    background-image: url(../for_add/l.gif);
+    background-repeat: repeat-y;
+    background-position: left;
+}
+.d6{
+    background-image: url(../for_add/b.gif);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+.d7{
+    background-image: url(../for_add/r.gif);
+    background-repeat: repeat-y;
+    background-position: right;
+}
+.d8{
+    background-image: url(../for_add/b-l.gif);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.d9{
+    background-image: url(../for_add/b-r.gif);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
