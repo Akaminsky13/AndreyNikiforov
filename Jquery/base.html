@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J Таблица</title>
+    <style>
+ 
+        table, table tr, table td{
+            border:rgb(171, 171, 171)     
+        }
+        table tr:first-child{
+            background-color: rgb(160, 159, 159);
+        }
+        tr td:first-child{
+            font-weight: bold;
+        }
+        table td{
+            border-bottom-style: dotted ;
+            border-right-style: dotted  ;
+        }
+        tr td:last-child{
+            border-right-style: none; 
+        }
+        caption{
+            caption-side: bottom;
+
+        } 
+        tr:nth-child(2n+1) {
+             background-color:rgb(224, 224, 224)
+        }
+        #b1, #b2 {
+            display: inline-block;
+            background: #2196f3;
+            color: #fff;
+            padding: 12px;
+            border-radius: 3px;
+            text-decoration: none;
+            border: none;
+        }
+        #b2{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+
+        <tr id="s1">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr id="s2">
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="s3">
+            <td>Петрова Илонна Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>94834</td>
+            <td>5467</td>
+        </tr>
+        <tr id="s4">
+            <td>Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>568646</td>
+            <td>73463</td>
+        </tr>
+        <tr id="s5">
+            <td>Пупин Фёдор Фёдорович</td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>3463443</td>
+            <td>352532</td>
+        </tr>
+        <tr id="s6">
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1963</td>
+            <td>345</td>
+            <td>326235</td>
+        </tr>
+    </table>
+
+
+    <input type="button" id="b1" value="Нет скрытых строк">
+    <input type="button" id="b2" value="Показать все строки">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $('#s2').click(function () {
+            $(this).css('display', 'none'),$('#b1').css('display', 'none'), $('#b2').css('display', 'block')
+        });
+        $('#s3').click(function () {
+            $(this).css('display', 'none'),$('#b1').css('display', 'none'), $('#b2').css('display', 'block')
+        });
+        $('#s4').click(function () {
+            $(this).css('display', 'none'),$('#b1').css('display', 'none'), $('#b2').css('display', 'block')
+        });
+        $('#s5').click(function () {
+            $(this).css('display', 'none'),$('#b1').css('display', 'none'), $('#b2').css('display', 'block')
+        });
+        $('#s6').click(function () {
+            $(this).css('display', 'none'),$('#b1').css('display', 'none'), $('#b2').css('display', 'block')
+        });
+        $('#b2').click(function(){
+            $('#b1').css('display', 'block'), $(this).css('display', 'none'),$('tr').css('display', 'table-row')
+        })
+        
+
+         
+    </script>
+
+
+</body>
+</html>
+

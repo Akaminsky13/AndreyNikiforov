@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка пароля</title>
+    <style>
+
+        fieldset{
+            width: 30%;
+        }
+        input{
+            margin-top: .2em ;
+        }
+        input:last-child{
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Проверка пароля</h1>
+
+    <fieldset>
+        <input type="text" class="check" id="p1"> *Пароль <br>
+        <input type="text" class="check" id="p2"> *Повторите пароль <br>
+        <input type="button" value="Отправить">
+    </fieldset>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    
+    <script>
+        $('#p2').keyup(function() {
+            var pass1 = $('#p1').val();
+            var pass2 = $('#p2').val();
+            if(pass1 != pass2){
+                $('.check').css('backgroundColor', 'red')
+            }
+            else{
+                $('.check').css('backgroundColor', 'green')
+            }
+
+
+        })
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
